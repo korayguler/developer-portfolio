@@ -20,7 +20,7 @@ $ npm start
 
 ## Customisation
 
-### Edit files for your customisation
+### Edit files for your customization
 
 ### your-info > public/data.json
 

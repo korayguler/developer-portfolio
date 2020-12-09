@@ -17,10 +17,7 @@ $ npm install
 $ npm start
 
 ```
-
-## Customisation
-
-### Edit files for your customization
+# Customization
 
 ### your-info > public/data.json
 

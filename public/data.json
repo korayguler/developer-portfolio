@@ -1,0 +1,146 @@
+{
+  "profile": {
+    "fullname": "Crazy Dev",
+    "about": "I am a Sofware Developer. My interests range from coffee to swimming. I am also interested in movies and photography.",
+    "email": "https://<your-email/>",
+    "resume": "https://<your-resume/>",
+    "profilePic": "profile.png"
+  },
+  "social": {
+    "medium": "https://<your-medium-url/>",
+    "github": "https://<your-github/>",
+    "twitter": "https://<your-twitter-adress/>",
+    "linkedin": "<your-linkedin-adress/>",
+    "instagram": "<your-instagram-adress/>"
+  },
+  "tools": {
+    "frontend": [
+      {
+        "tool": "javascript",
+        "icon": "devicon-javascript-plain colored"
+      },
+      {
+        "tool": "vue",
+        "icon": "devicon-vuejs-plain colored"
+      },
+      {
+        "tool": "react",
+        "icon": "devicon-react-original colored"
+      },
+      {
+        "tool": "html5",
+        "icon": "devicon-html5-plain colored"
+      },
+      {
+        "tool": "css3",
+        "icon": "devicon-css3-plain colored"
+      },
+      {
+        "tool": "sass",
+        "icon": "devicon-sass-original colored"
+      },
+      {
+        "tool": "gulp",
+        "icon": "devicon-gulp-plain colored"
+      },
+      {
+        "tool": "bootstrap",
+        "icon": "devicon-bootstrap-plain colored"
+      }
+    ],
+    "backend": [
+      {
+        "tool": "nodejs",
+        "icon": "devicon-nodejs-plain colored"
+      },
+      {
+        "tool": "express",
+        "icon": "devicon-express-original"
+      },
+      {
+        "tool": "mysql",
+        "icon": "devicon-mysql-plain colored"
+      },
+      {
+        "tool": "mongodb",
+        "icon": "devicon-mongodb-plain colored"
+      }
+    ],
+    "devtools": [
+      {
+        "tool": "babel",
+        "icon": "devicon-babel-plain colored"
+      },
+      {
+        "tool": "git",
+        "icon": "devicon-git-plain colored"
+      },
+      {
+        "tool": "github",
+        "icon": "devicon-github-plain"
+      },
+      {
+        "tool": "npm",
+        "icon": "devicon-npm-original-wordmark colored"
+      },
+      {
+        "tool": "vscode",
+        "icon": "devicon-visualstudio-plain colored"
+      },
+      {
+        "tool": "photoshop",
+        "icon": "devicon-photoshop-plain colored"
+      },
+      {
+        "tool": "devtools",
+        "icon": "devicon-chrome-plain colored"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "Vue.js and Vuex TodoList APP",
+      "image": "vuex-todolist.jpg",
+      "live": "https://vuex-todolist.vercel.app/",
+      "source": "https://github.com/korayguler/vuex-todolist",
+      "tech": ["vue", "vuex", "js"]
+    },
+    {
+      "name": "Node.js, Express, ModgoDB API",
+      "image": "nodejs-auth-api.jpg",
+      "live": "",
+      "source": "https://github.com/korayguler/nodejs-auth-api",
+      "tech": ["nodejs", "express", "mongodb", "js"]
+    },
+    {
+      "name": "Live Exchange",
+      "image": "live-exchange.jpg",
+      "live": "https://korayguler.github.io/live-exchange/index.html",
+      "source": "https://github.com/korayguler/live-exchange",
+      "tech": ["css", "js"]
+    },
+
+    {
+      "name": "Genesis Portfolio Template",
+      "image": "genesis-portfolio-template.jpg",
+      "live": "https://korayguler.github.io/genesis-portfolio-template/",
+      "source": "https://github.com/korayguler/genesis-portfolio-template",
+      "tech": ["scss", "js"]
+    },
+    {
+      "name": "Simple Portfolio UI",
+      "image": "simple-portfolio-ui.jpg",
+      "live": "https://korayguler.github.io/simple-portfolio-ui/",
+      "source": "https://github.com/korayguler/simple-portfolio-ui",
+      "tech": ["scss"]
+    },
+
+    {
+      "name": "Taskly Web UI",
+      "image": "taskly-web-ui.jpg",
+      "live": "https://korayguler.github.io/taskly-web-ui/",
+      "source": "https://github.com/korayguler/taskly-web-ui",
+      "tech": ["scss"]
+    }
+  ]
+}

@@ -30,7 +30,7 @@ $ npm start
     "about": "I am a Sofware Developer.",
     "email": "https://<your-email/>",
     "resume": "https://<your-resume/>",
-    "profilePic": "profile.png" // public/web/profile.png change the image
+    "profilePic": "profile.png" // public/web/profile.png change-the-image
   }
 ```
 
@@ -53,8 +53,8 @@ $ npm start
     {
       "name": "Vue.js and Vuex TodoList APP",                   //title
       "image": "vuex-todolist.jpg",                             //public/projects/file-name.jpg
-      "live": "https://vuex-todolist.vercel.app/",              //live preview
-      "source": "https://github.com/korayguler/vuex-todolist",  //source link
+      "live": "https://vuex-todolist.vercel.app/",              //live-preview
+      "source": "https://github.com/korayguler/vuex-todolist",  //source-link
       "tech": ["vue", "vuex", "js"]                             //tags
     },
     {
@@ -74,13 +74,13 @@ $ npm start
 "frontend": [
 {
 "tool": "javascript",
-"icon": "devicon-javascript-plain colored" //change icons from https://devicon.dev/
+"icon": "devicon-javascript-plain colored" //change-icons https://devicon.dev/
 },],
 "backend": [
 {
 "tool": "nodejs",
 "icon": "devicon-nodejs-plain colored"
-},]
+},],
 "devtools": [
 {
 "tool": "nodejs",

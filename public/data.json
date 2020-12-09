@@ -1,17 +1,17 @@
 {
   "profile": {
     "fullname": "Crazy Dev",
-    "about": "I am a Sofware Developer. My interests range from coffee to swimming. I am also interested in movies and photography.",
-    "email": "https://<your-email/>",
-    "resume": "https://<your-resume/>",
+    "about": "I am a Sofware Developer. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit quasi expedita reprehenderit explicabo sint provident beatae illum sapiente minus vitae alias obcaecati, a consequatur consectetur. Fugiat officiis quasi velit eius.",
+    "email": "<your-email/>",
+    "resume": "<your-resume/>",
     "profilePic": "profile.png"
   },
   "social": {
     "medium": "https://<your-medium-url/>",
     "github": "https://<your-github/>",
     "twitter": "https://<your-twitter-adress/>",
-    "linkedin": "<your-linkedin-adress/>",
-    "instagram": "<your-instagram-adress/>"
+    "linkedin": "https://<your-linkedin-adress/>",
+    "instagram": "https://<your-instagram-adress/>"
   },
   "tools": {
     "frontend": [

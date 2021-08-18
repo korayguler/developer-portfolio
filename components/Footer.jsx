@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 export default function Footer() {
   return (
     <footer className='footer'>
@@ -9,10 +9,10 @@ export default function Footer() {
           target='_blank'
           rel='noreferrer'
         >
-          made with{' '}
-          <span style={{ 'color': '#A81020' }}>
-            <i class='fas fa-heart'></i>
-          </span>{' '}
+          made with
+          <span className='icon'>
+            <i className='fas fa-heart'></i>
+          </span>
           open Source
         </a>
       </span>

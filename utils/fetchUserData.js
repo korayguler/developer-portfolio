@@ -1,5 +1,6 @@
-export const getData = async () => {
-  const response = await fetch(process.env.PUBLIC_URL + '/data.json', {
+import { server } from './config';
+export const fetchUserData = async () => {
+  const response = await fetch(`${server}/data.json`, {
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/json',

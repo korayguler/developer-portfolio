@@ -1,18 +1,38 @@
 {
   "profile": {
-    "fullname": "Crazy Dev",
-    "about": "I am a Sofware Developer. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit quasi expedita reprehenderit explicabo sint provident beatae illum sapiente minus vitae alias obcaecati, a consequatur consectetur. Fugiat officiis quasi velit eius.",
+    "fullname": "Koray Güler",
+    "about": "I'm a Frontend Developer based in Istanbul, Turkey. I build, test and deploy modern web applications and i am interested in photography, trekking and swimming",
     "email": "<your-email/>",
     "resume": "<your-resume/>",
-    "profilePic": "profile.png"
+    "theme": "dark"
   },
-  "social": {
-    "medium": "https://<your-medium-url/>",
-    "github": "https://<your-github/>",
-    "twitter": "https://<your-twitter-adress/>",
-    "linkedin": "https://<your-linkedin-adress/>",
-    "instagram": "https://<your-instagram-adress/>"
-  },
+  "social": [
+    {
+      "name": "Twitter",
+      "icon": "fas fa-hashtag",
+      "url": "https://<your-twitter-url/>"
+    },
+    {
+      "name": "Github",
+      "icon": "fab fa-github-alt",
+      "url": "https://<your-github/>"
+    },
+    {
+      "name": "Medium",
+      "icon": "fab fa-medium-m",
+      "url": "https://<your-medium-url/>"
+    },
+    {
+      "name": "Linkedin",
+      "icon": "fas fa-link",
+      "url": "https://<your-linkedin-url/>"
+    },
+    {
+      "name": "Instagram",
+      "icon": "fas fa-camera-retro",
+      "url": "https://<your-instagram-url/>"
+    }
+  ],
   "tools": {
     "frontend": [
       {

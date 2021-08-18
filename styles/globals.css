@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Nunito:wght@200;300;400&family=Raleway:wght@200;300;400&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Nunito', sans-serif;
   user-select: none;
 }
 body {
@@ -12,6 +14,9 @@ body {
   --f-14: 14px;
   --animate: 250ms;
   --border-rad: 15px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   --c-light: #242526;
   --c-dark: #f8f9fa;
@@ -30,7 +35,27 @@ body.dark {
   --c-gray-light: #3d4045;
   --c-aqua: rgb(115, 255, 255);
 }
-a {
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #1d1b31;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #abe2ed;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   text-decoration: none;
   color: var(--c-light);
   transition: var(--animate) color;
@@ -84,9 +109,23 @@ a {
 .footer a,
 span {
   color: var(--c-light);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.footer a .icon {
+  color: #a81020;
 }
 .footer a:hover {
   color: var(--c-aqua);
+}
+
+.footer a:hover {
+  color: var(--c-aqua);
+}
+.footer a:hover .icon {
+  transform: scale(1.2);
+  transition: 200ms all;
 }
 .nav {
   width: 100%;
@@ -100,8 +139,7 @@ span {
   color: var(--c-light);
   font-size: var(--f-16);
 }
-.nav a:last-child {
-}
+
 .logo {
   display: none;
   align-items: center;
@@ -175,16 +213,16 @@ span {
   justify-content: center;
   text-align: center;
 }
-.section .profile img {
-  max-width: 240px;
-  max-height: 240px;
+
+.section .profile .image-container {
+  overflow: hidden;
   border-radius: 999px;
-  height: auto;
   transition: var(--animate);
+  height: 240px;
+  position: relative;
+  width: 240px;
 }
-.section .profile img:hover {
-  transform: scale(1.1);
-}
+
 .section .profile h1 {
   font-size: 40px;
 }
@@ -216,6 +254,7 @@ span {
   width: 100%;
   border-radius: var(--border-rad);
   object-fit: cover;
+  overflow: hidden;
 }
 .card .name {
   font-size: var(--f-18);
@@ -226,6 +265,9 @@ span {
 }
 .card .tags {
   height: auto;
+  display: flex;
+  padding: 0 20px;
+  flex-wrap: wrap;
 }
 .card .tags span {
   background-color: var(--c-light);
@@ -233,6 +275,7 @@ span {
   padding: 3px 5px;
   font-size: var(--f-14);
   margin-right: 5px;
+  margin-bottom: 5px;
   border-radius: 6px;
 }
 .card .tags span:last-child {
@@ -402,8 +445,12 @@ span {
     flex-direction: row;
     text-align: left;
   }
-  .section .profile img {
+  .section .profile .image-container {
     margin-right: 30px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    flex-shrink: 0;
   }
   .section .profile div .connect {
     justify-content: flex-start;
@@ -594,4 +641,15 @@ svg.tea #steamR {
     stroke-dashoffset: 27;
     opacity: 0;
   }
+}
+
+.not-found {
+  font-size: 45px;
+  height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.not-found .text {
+  font-size: 30px;
 }

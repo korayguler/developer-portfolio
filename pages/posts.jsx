@@ -1,36 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import Loader from './Loader';
-export default function Gallery() {
+import Loader from '../components/Loader';
+import fetchMediumPosts from '../utils/fetchMediumPosts';
+export default function Posts() {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    getPosts().then((data) => {
+    fetchMediumPosts().then((data) => {
       setPosts(data.items);
       setIsLoading(false);
-      console.log(data);
     });
   }, []);
 
-  async function getPosts() {
-    const username = 'pddivine';
-    const response = await fetch(
-      `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${username}`,
-    );
-    const result = await response.json();
-    return result;
-  }
   return (
     <>
       {isLoading && <Loader />}
       {!isLoading && (
-        <div className='posts animate__animated animate__fadeInUpBig'>
-          {posts.map((e) => {
+        <div className='posts animate__animated animate__lightSpeedInLeft   '>
+          {posts.map((e, i) => {
             return (
               <a
                 className='post'
                 href={e.link}
                 target='_blank'
                 rel='noreferrer'
+                key={i}
               >
                 <div className='image'>
                   <img src={e.thumbnail} alt={e.title} />
@@ -38,8 +31,8 @@ export default function Gallery() {
                 <div className='content'>
                   <h2>{e.title}</h2>
                   <p>
-                    {e.categories.map((e) => {
-                      return <span>{e}</span>;
+                    {e.categories.map((e, i) => {
+                      return <span key={i}>{e}</span>;
                     })}
                   </p>
                 </div>

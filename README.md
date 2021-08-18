@@ -1,122 +1,34 @@
-# Developer Portfolio
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## How to run
+## Getting Started
+
+First, run the development server:
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/korayguler/developer-portfolio
-
-# Go into the repository
-$ cd developer-portfolio
-
-
-# Install dependencies
-$ npm install
-
-# Start the dev server
-$ npm start
-
-```
-# Customization
-
-### your-info > public/data.json
-
-```json
-"profile": {
-    "fullname": "Crazy Dev",
-    "about": "I am a Sofware Developer.",
-    "email": "https://<your-email/>",
-    "resume": "https://<your-resume/>",
-    "profilePic": "profile.png" // public/web/profile.png change-the-image
-  }
+npm run dev
+# or
+yarn dev
 ```
 
-### your-social-links > public/data.json
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```json
-"social": {
-    "medium": "https://<your-medium-url/>",
-    "github": "https://<your-github/>",
-    "twitter": "https://<your-twitter-adress/>",
-    "linkedin": "https://<your-linkedin-adress/>",
-    "instagram": "https://<your-instagram-adress/>"
-  },
-```
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-### your-projects > public/data.json
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-```json
-"projects": [
-    {
-      "name": "Vue.js and Vuex TodoList APP",                   //title
-      "image": "vuex-todolist.jpg",                             //public/projects/file-name.jpg
-      "live": "https://vuex-todolist.vercel.app/",              //live-preview
-      "source": "https://github.com/korayguler/vuex-todolist",  //source-link
-      "tech": ["vue", "vuex", "js"]                             //tags
-    },
-    {
-      "name": "Node.js, Express, ModgoDB API",
-      "image": "nodejs-auth-api.jpg",
-      "live": "https://nodejs--auth-api.herokuapp.com/",
-      "source": "https://github.com/korayguler/nodejs-auth-api",
-      "tech": ["nodejs", "express", "mongodb", "js"]
-    }]
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-```
+## Learn More
 
-### your-tools > public/data.json
+To learn more about Next.js, take a look at the following resources:
 
-```json
-"tools": {
-"frontend": [
-{
-"tool": "javascript",
-"icon": "devicon-javascript-plain colored" //change-icons https://devicon.dev/
-},],
-"backend": [
-{
-"tool": "nodejs",
-"icon": "devicon-nodejs-plain colored"
-},],
-"devtools": [
-{
-"tool": "nodejs",
-"icon": "devicon-nodejs-plain colored"
-},] }
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### edit your medium-url > components/Posts.js
+## Deploy on Vercel
 
-```javascript
-async function getPosts() {
-  const username = '<medium-url/>';
-  const response = await fetch(
-    `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${username}`,
-  );
-  const result = await response.json();
-  return result;
-}
-```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### change meta tags > public/index.html
-
-```html
-<title>Developer Portfolio</title>
-<meta name="description" content="Free Developer Portfolio for All Developer" />
-```
-
-## Tech Stack
-
-- react
-- react-dom
-- react-router-dom
-- animate.css
-- devicon.dev
-
-## Prerequisite
-
-- node
-- npm
-
-#### and deploy....
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
